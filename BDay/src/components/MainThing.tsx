@@ -18,7 +18,7 @@ function MainThing() {
                 <p>(mach audio ah)</p>
                 <p>es isch sehr cool</p>
                 <p>vertrau</p>
-                <p>... no chli abe</p>
+                <p>... i hope they play FE!N</p>
                 <p>ok da isch es</p>
                 <VideoPlayer/>
             </Stack>

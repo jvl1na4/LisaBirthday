@@ -1,40 +1,16 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 
 const VideoPlayer: React.FC = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
-    const [isPlaying, setIsPlaying] = useState(false);
-
-    const handlePlay = () => {
-        if (videoRef.current) {
-            videoRef.current.play();
-            setIsPlaying(true);
-        }
-    };
-
-    const handlePause = () => {
-        if (videoRef.current) {
-            videoRef.current.pause();
-            setIsPlaying(false);
-        }
-    };
 
     return (
         <div>
-            <video
-                ref={videoRef}
-                width="100%"
-                controls={false}
-            >
+            <video ref={videoRef} width="100%" controls>
                 <source src="/LisaBirthday/35228.mp4" type="video/mp4"/>
-
+                <source src="/LisaBirthday/35228.webm" type="video/webm"/>
+                <source src="/LisaBirthday/35228.ogv" type="video/ogg"/>
                 Your browser does not support the video tag.
             </video>
-
-            {!isPlaying ? (
-                <button onClick={handlePlay}>Play</button>
-            ) : (
-                <button onClick={handlePause}>Pause</button>
-            )}
         </div>
     );
 };
