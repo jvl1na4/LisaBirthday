@@ -25,7 +25,7 @@ const VideoPlayer: React.FC = () => {
                 width="100%"
                 controls={false}
             >
-                <source src="/35228.mp4" type="video/mp4"/>
+                <source src="/LisaBirthday/35228.mp4" type="video/mp4"/>
 
                 Your browser does not support the video tag.
             </video>
